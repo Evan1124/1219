@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{ struct student
+  { int stuID;
+    char stuNAME[20];//="evan";
+	char stuGENDER;
+};
+  //zhang.stuID=84453;
+  //zhang.stuNAME = "";
+  //zhang.stuGENDER = 'M'; 
+  struct student zhang={123456,"andy",'M'}; 
+  printf("%s",zhang.stuNAME);
+  printf("%d",zhang.stuID);
+  printf("%c",zhang.stuGENDER);
+  return 0;
+}
+	//结构体：
+	//struct [结构体名]                                          类比： 
+	//{ 类型标识符  成员名；                                     数组定义 相同类型 的数据集合 
+    //  类型标识符  成员名；                                   结构体定义 不同类型 的数据集合 
+   //}；                                                             函数定义 不同代码 的集合 
+   //                                                              结构体定义 不同变量 的集合 
+//eg:
+//struct STUDENT
+//{ int stuID;
+//  char stuNAME[20];       结构体的定义不是变量声明 变量声明struct STUDENT zhang； 
+//  char stuGENDER; 
+//}; 
+
+//结构体变量的引用：
+//引用方式：结构体变量名.成员名  zhang.stuID = 834435 
